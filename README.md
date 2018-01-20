@@ -1,0 +1,7 @@
+-take photos for heading
+-make cards to reveal on each hover over photo with details about me (link photographer's info)
+-link projects in list below
+-design logo or select font for title
+-select background photo
+-choose fonts
+-make sure it is mobile responsive

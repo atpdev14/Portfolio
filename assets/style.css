@@ -1,0 +1,231 @@
+html {}
+
+body {
+	/*background-image: url("./images/galaxy_bg.png");*/
+	height: 100%;
+	width: 100%;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment: fixed
+}
+
+.container {}
+
+.leadPhoto, .infoCard, .websiteThumb, .portInfoCard {
+	border-radius: 10px;
+}
+
+.photoHead {
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 5px;
+	height: 658px;
+	overflow: visible;
+	padding: 0px;
+	/*background: mistyrose;*/
+}
+
+.photoHeadTop, .photoHeadBottom {
+	height: 50%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+
+}
+
+.infoCard {
+	display: inline;
+	background: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 50px;
+	z-index: 10;
+	background-color:rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+}
+
+.infoCardList {
+	list-style-type: none;
+	font-size: 30px;
+}
+
+.leadPhoto {
+	display: inline;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	z-index: 0;
+}
+
+.col-sm-4 {
+	height: 100%;
+	padding: 0px;
+}
+
+#rowOneFirstPhoto {
+	position: relative;
+	left: 0px;
+}
+
+#rowTwoSecondPhoto {
+	position: relative;
+	left: 0px;
+}
+
+.pageTitleDiv {
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	height: 350px;
+	overflow: hidden;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.0);
+}
+
+.pageTitleText {
+	font-size: 100px;
+	margin-top: 50px;
+
+}
+
+.portfolio {
+	box-sizing: border-box;
+	/*margin: auto;*/
+	overflow: hidden;
+	/*background: mistyrose;*/
+}
+
+
+.websiteThumb {
+	box-sizing: border-box;
+	display: inline;
+	height: 300px;
+	width: 300px;
+}
+
+
+.portfolioList {
+	list-style-type: none;
+	margin: auto;
+	text-align: center;
+	padding: 0px;
+	/*background: mistyrose;*/
+
+}
+
+
+.portfolioListItem {
+	display: inline;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 600px;
+	/*background: mistyrose;*/
+}
+
+.portInfoCard {
+	box-sizing: border-box;
+	display: inline;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	background: black;
+	z-index: 1;
+	-webkit-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+}
+
+.portListlabel {
+	font-size: 50px;
+	text-decoration: underline;	
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+
+#portInfoCard1 {
+	left: 0px;
+}
+
+#portInfoCard2 {
+	left: 300px;
+}
+
+#portInfoCard3 {
+	left: 0px;
+}
+
+#portInfoCard4 {
+	left: 300px;
+}
+
+#webThumb1 {
+	position: relative;
+	left: 300px;
+}
+
+#webThumb2 {}
+
+#webThumb3 {
+	position: relative;
+	left: 300px;
+}
+
+#webThumb4 {}
+
+.footer {
+	box-sizing: border-box;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	height: 100px;
+	overflow: hidden;
+	text-align: center;
+	/*background: mistyrose;*/
+}
+
+
+.socialImage {
+	height: 85%;
+	width: auto;
+	margin: 5px;
+}
+
+#portList1 {
+	position: relative;
+	left: 25px;
+}
+
+#portList2 {
+	position: relative;
+	left: -350px;
+}
+
+#portList3 {
+	position: relative;
+	left: -50px;
+}
+
+#portList4 {
+	position: relative;
+	left: -300px;	
+}
+
+
+
+
+
