@@ -5,13 +5,13 @@ var infoCard = $(".infoCard");
 var websiteThumb = $(".websiteThumb");
 
 
-leadPhoto.on("mouseover", function(){
+leadPhoto.on("mouseenter", function(){
 	var id = $(this).attr("id");
 	var lastLetter = id[id.length -1];
 	var infoCardId = "#infoCard"+lastLetter;
 	$(infoCardId).removeClass("invisible");
 
-	$(".infoCard").on("mouseout", function(){
+	$(".infoCard").on("mouseleave", function(){
 		$(infoCardId).addClass("invisible");
 	});
 	

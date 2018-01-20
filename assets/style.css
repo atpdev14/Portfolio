@@ -10,7 +10,10 @@ body {
 	background-attachment: fixed
 }
 
-.container {}
+.container {
+	padding: 0px;
+	width: 1280px;
+}
 
 .leadPhoto, .infoCard, .websiteThumb, .portInfoCard {
 	border-radius: 10px;
@@ -19,11 +22,10 @@ body {
 .photoHead {
 	box-sizing: border-box;
 	margin: auto;
-	margin-top: 5px;
-	height: 658px;
+	margin-top: 0px;
+	height: 853px;
 	overflow: visible;
 	padding: 0px;
-	/*background: mistyrose;*/
 }
 
 .photoHeadTop, .photoHeadBottom {
@@ -47,7 +49,7 @@ body {
 	margin: 0px;
 	padding: 50px;
 	z-index: 10;
-	background-color:rgba(0, 0, 0, 0.3);
+	background-color:rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 	box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
@@ -56,6 +58,7 @@ body {
 .infoCardList {
 	list-style-type: none;
 	font-size: 30px;
+	color: white;
 }
 
 .leadPhoto {
@@ -86,23 +89,23 @@ body {
 	margin: auto;
 	margin-top: 3px;
 	margin-bottom: 5px;
-	height: 350px;
-	overflow: hidden;
+	height: auto;
+	overflow: visible;
 	text-align: center;
 	background-color:rgba(0, 0, 0, 0.0);
 }
 
 .pageTitleText {
-	font-size: 100px;
+	font-size: 150px;
 	margin-top: 50px;
+	font-width: expanded;
 
 }
 
 .portfolio {
 	box-sizing: border-box;
-	/*margin: auto;*/
-	overflow: hidden;
-	/*background: mistyrose;*/
+	overflow: visible;
+	width: 100%;
 }
 
 
@@ -111,6 +114,9 @@ body {
 	display: inline;
 	height: 300px;
 	width: 300px;
+	-webkit-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
+	box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 }
 
 
@@ -119,8 +125,6 @@ body {
 	margin: auto;
 	text-align: center;
 	padding: 0px;
-	/*background: mistyrose;*/
-
 }
 
 
@@ -131,7 +135,6 @@ body {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 600px;
-	/*background: mistyrose;*/
 }
 
 .portInfoCard {
@@ -140,16 +143,26 @@ body {
 	height: 300px;
 	width: 300px;
 	position: absolute;
-	background: black;
+	background-color:rgba(0, 0, 0, 0.5);
 	z-index: 1;
+	padding: 50px;
 	-webkit-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 	box-shadow: 9px 9px 43px -1px rgba(0,0,0,0.75);
 }
 
+.portInfoCardList {
+	list-style-type: none;
+	font-size: 30px;
+	color: white;
+}
+
 .portListlabel {
+	margin-top: 10px;
+	margin-bottom: 15px;
 	font-size: 50px;
-	text-decoration: underline;	
+	/*text-decoration: underline;	*/
+	border-bottom: 3px solid;
 }
 
 .invisible {
