@@ -112,10 +112,15 @@ body {
 .infoCardList {
 	font-family: 'Rokkitt', serif;
 	list-style-type: none;
-	font-size: 35px;
+	font-size: 32px;
 	color: white;
 	margin: 0px;
 	padding: 0px;
+}
+
+#educationList {
+	font-size: 24px;
+	text-align: center;
 }
 
 .leadPhoto {
@@ -129,7 +134,7 @@ body {
 .col-sm-4 {
 	height: 100%;
 	padding: 0px;
-	overlflow: auto;
+	overflow: auto;
 }
 
 #rowOneFirstPhoto {
@@ -151,11 +156,9 @@ body {
 	overflow: visible;
 	text-align: center;
 	background-color:rgba(0, 0, 0, 0.0);
-	/*border-bottom: 3px solid;*/
 }
 
 .pageTitleText {
-	/*font-family: 'Raleway', sans-serif;*/
 	font-family: 'Cormorant Infant', sans-serif, bold;
 	letter-spacing: 20px;
 	font-size: 75px;
@@ -163,7 +166,6 @@ body {
 	padding-bottom: 5px;
 	margin-bottom: 0px;
 	font-width: expanded;
-	/*text-shadow: 7px 5px 13px rgba(150, 150, 150, 0.79);*/
 	
 }
 
@@ -173,6 +175,10 @@ body {
 	top: -10px;
 	left: 0px;
 }
+
+.mobileInfoCard {
+	display: none;
+	}
 
 #development {
 	position: relative;
@@ -250,6 +256,12 @@ body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	letter-spacing: 3px;
 	text-decoration: underline;
+	text-align: center;
+}
+
+.repoLink {
+	color: white;
+	font-size: 30px;
 }
 
 .fadeInLeftBig {
@@ -337,7 +349,6 @@ body {
 #portListDiv1 {
 	height: auto;
 	width: 100%;
-	/*background-image: url("./images/brushstroke3.png");*/
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -454,6 +465,116 @@ body {
 #portList4 {
 	position: relative;
 	left: -300px;	
+}
+
+
+@media screen and (max-width:768px){
+
+	.container-fluid{
+		width: 100%;
+		height: 2000px;
+		padding: 0px;
+	}
+
+
+	.leadPhoto, .infoCard, #col1, #col2, #col3, .photoHead, .portfolio {
+		display: block;
+		height: auto;
+	}
+
+	#headPhoto4, #headPhoto5, #headPhoto6, .websiteThumb {
+		display: none;
+	}
+
+	.col-sm-4 {
+		width: 100%;
+		height: auto;
+	}
+
+	#headPhoto1, #headPhoto2, #headPhoto3 {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	#infoCard2, #infoCard4, #infoCard6 {
+		display: none;
+	}
+
+	.portfolioList {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+
+	#portList1, #portList2 {
+		position: relative;
+		left: 0px;
+		width: 100%;
+	}
+
+	.portListlabel {
+		border-bottom: none;
+		margin-top: 45px;
+	}
+
+	.mobileInfoCard {
+		display: block;
+		visibility: visible;
+		width: 95%;
+		text-align: center;
+		margin-bottom: 20px;
+		margin: auto;
+	}
+
+	.dividerHead {
+		width: 100%;
+	}
+
+	.collabLink {
+		color: black;
+	}
+
+	.infoCard {
+		position: relative;
+		top: 100px;
+	}
+
+	.infoCardList, .infoCardHead {
+		color: black;
+		text-align: center;
+	}
+
+	.portInfoCard, #name {
+		width: 100%;
+		height: auto;
+	}
+
+	.portInfoCard {
+		position: relative;
+		width: 100%;
+	}
+	
+	.pageTitleDiv{
+		width: 100%;
+		position: absolute;
+		top: 22px;
+		left: 12px;
+	}
+
+	.hideTitle {
+		top: -10px;
+	}
+
+	.pageTitleText {
+		font-size: 50px;
+	}
+
+	.footer {
+		display: block;
+		width: 100%;
+	}
+
 }
 
 

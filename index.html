@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
  
@@ -30,28 +30,28 @@
   </head>
 <body>
 	<hr>
-	<div class="container">
+	<div class="container-fluid">
 		<!-- ============== PHOTO HEAD =================== -->
 		 <!-- =================== TOP ================== -->
 		<div class="row photoHead">
 			<div class="row photoHeadTop">
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col1">
 					<img id="headPhoto1" class="leadPhoto" src="./assets/images/synth.JPG" alt=".leadPhoto">
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col2">
 					<img id="headPhoto2" class="leadPhoto" src="./assets/images/headphones.JPG" alt=".leadPhoto">
 					<div id="infoCard2" class="infoCard invisible">
 						<h3 class="infoCardHead">About Me</h3>
 						<ul class="infoCardList">
 							<li>
-								<p>An outgoing, dual-brained developer who is passionate about working with a team to create inspirational content.</p>
+								<p>An outgoing, dual-brained developer who is passionate about working with a team to create inspirational content related to music, art, and learning more about society.</p>
 							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col3">
 					<img id="headPhoto3" class="leadPhoto" src="./assets/images/maschine.JPG" alt=".leadPhoto">
 				</div>
 			</div>  <!-- Row Closure - photoHeadTop -->
@@ -59,7 +59,7 @@
 			
 			<!-- =================== Bottom ================== -->
 			<div class="photoHeadBottom">
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col4">
 					<img id="headPhoto4" class="leadPhoto" src="./assets/images/coffee.jpg" alt=".leadPhoto">
 					<div id="infoCard4" class="infoCard invisible">
 						<h3 class="infoCardHead">Coding Languages</h3>
@@ -69,7 +69,7 @@
 							<li>jQuery</li>
 							<li>Node.js</li>
 							<li>React.js</li>
-							<li>Express.js</li>
+							<li>Express.js</li>	
 							<li>MongoDB</li>
 							<li>MySQL</li>
 							<li>RESTful API's</li>
@@ -77,13 +77,18 @@
 					</div>
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col5">
 					<img id="headPhoto5" class="leadPhoto" src="./assets/images/markers.JPG" alt=".leadPhoto">
 				</div>
 
-				<div class="col-sm-4">
+				<div class="col-sm-4" id="col6">
 					<img id="headPhoto6" class="leadPhoto" src="./assets/images/mouse.JPG" alt=".leadPhoto">
 					<div id="infoCard6" class="infoCard invisible">
+						<h3 class="infoCardHead">Education</h3>
+							<ul id="educationList" class="infoCardList">
+								<li>Full Stack Web Development Bootcamp, UCLA Extension 2018.</li>
+								<li>Associate of Arts, Mid-Plains Community College 2017.</li>
+							</ul>
 						<h3 class="infoCardHead">Contact</h3>
 						<ul class="infoCardList">
 							<li>tproctor4414@gmail.com</li>
@@ -95,9 +100,47 @@
 
 
 		<!-- ============== PAGE TITLE =================== -->
-		<div class="row pageTitleDiv">
+		<div id="pageTitleDiv" class="row pageTitleDiv">
 			<h1 id="name" class="pageTitleText">T. Proctor</h1>
 		</div> <!-- Page Title Closure -->
+
+
+		<!-- ============== MOBILE INFO CARD =================== -->
+		<div class="mobileInfoCard">
+			<h3 class="infoCardHead">About Me</h3>
+				<ul class="infoCardList">
+					<li>
+						<p>An outgoing, dual-brained developer who is passionate about working with a team to create inspirational content related to music, art, and learning more about society.</p>
+					</li>
+				</ul>
+
+
+			<h3 class="infoCardHead">Coding Languages</h3>
+				<ul id="codeLanguageList" class="infoCardList">
+					<li>HTML/CSS</li>
+					<li>Javascript</li>
+					<li>jQuery</li>
+					<li>Node.js</li>
+					<li>React.js</li>
+					<li>Express.js</li>	
+					<li>MongoDB</li>
+					<li>MySQL</li>
+					<li>RESTful API's</li>
+				</ul>
+
+
+			<h3 class="infoCardHead">Education</h3>
+				<ul id="educationList" class="infoCardList">
+					<li>Full Stack Web Development Bootcamp, UCLA Extension 2018.</li>
+					<li>Associate of Arts, Mid-Plains Community College 2017.</li>
+				</ul>
+			
+			<h3 class="infoCardHead">Contact</h3>
+				<ul class="infoCardList">
+					<li>tproctor4414@gmail.com</li>
+				</ul>
+
+		</div>
 
 
 		<!-- ============== Portfolio =================== -->
@@ -134,11 +177,44 @@
 									<li><a class="collabLink" href="http://jordanchadsey.com/" target="blank">Jordan Chadsey</a></li>
 									<li>Lino Suarez</li>
 								</ul>
+
+								<a class="repoLink" target="blank" href="https://github.com/jordanchadsey/SnipBox"><h3 class="dividerHead">Repository</h3></a>
 							</div>
 						</div>
+						
 						<img id="webThumb1" class="websiteThumb" src="./assets/images/SnipBox_thumbnail.png" alt="website thumbnail">
 						<p class="portListlabel"><a class="websiteLink" href="https://gogle.io/" target="blank">SnipBox</a></p>
 					</div>
+
+					<!-- ================ SNIPBOX-Mobile Info Card =============== -->
+						<div class="mobileInfoCard">
+							<h3 class="dividerHead">My Contributions</h3>
+								<ul class="projectDetails">
+									<li>Created user authentication through Github.</li>
+									<li>Utilized Github API's to allow user's to search and browse Gists.</li>
+									<li>Encrypted and decrypted information to store in Firebase.</li>
+								</ul>
+
+							<h3 class="dividerHead">Technologies</h3>
+								<ul class="projectDetails">
+									<li>HTML</li>
+									<li>Materialize</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+									<li>jQuery</li>
+									<li>Firebase</li>
+									<li>Git/Github</li>
+									<li>Github oAuth</li>
+								</ul>
+
+							<h3 class="dividerHead">Collaborators</h3>
+								<ul class="projectDetails">
+									<li><a class="collabLink" href="http://jordanchadsey.com/" target="blank">Jordan Chadsey</a></li>
+									<li>Lino Suarez</li>
+								</ul>
+
+							<a class="repoLink" target="blank" href="https://github.com/jordanchadsey/SnipBox"><h3 class="dividerHead">Repository</h3></a>
+						</div>
 				</li>
 
 				<li id="portList2" class="portfolioListItem">
@@ -146,15 +222,72 @@
 					<div id="portInfoCard2" class="portInfoCard invisible websiteThumb">
 						<div class="infoCardDivider">
 							<h3 class="dividerHead">My Contributions</h3>
+							<ul class="projectDetails">
+									<li>Front-end Javascript game logic.</li>
+									<li>Back-end API routes with Node.js and Sequelize.</li>
+									<li>Created user login and sign-up on front and back end.</li>
+									<li>Research and data collection.</li>
+									
+							</ul>
 						</div>
 						<div class="infoCardDivider">
 							<h3 class="dividerHead">Technologies</h3>
+							<ul class="projectDetails">
+								<li>HTML</li>
+								<li>Bootstrap</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>Node.js</li>
+								<li>Sequelize</li>
+								<li>Git/Github</li>
+								<li>MySQL</li>
+							</ul> 
 						</div>
 						<div class="infoCardDivider">
 							<h3 class="dividerHead">Collaborators</h3>
+								<ul class="projectDetails">
+									<li><a class="collabLink" href="" target="blank">Jesus Coloyan</a></li>
+									<li>Andrew Castellano</li>
+								</ul>
+
+								<a class="repoLink" target="blank" href="https://github.com/castellano42/YeasieBois"><h3 class="dividerHead">Repository</h3></a>
+									
+									
 						</div>
 					</div>
-					<p class="portListlabel">Craft Beer API</p>
+					<a class="websiteLink" target="blank" href=""><p class="portListlabel">Beer Tasting Trivia</p></a>
+
+					<!-- ================ Beer Quiz-Mobile Info Card =============== -->
+						<div class="mobileInfoCard">
+							<h3 class="dividerHead">My Contributions</h3>
+								<ul class="projectDetails">
+									<li>Front-end Javascript game logic.</li>
+									<li>Back-end API routes with Node.js and Sequelize.</li>
+									<li>Created user login and sign-up on front and back end.</li>
+									<li>Research and data collection.</li>				
+								</ul>
+
+							<h3 class="dividerHead">Technologies</h3>
+								<ul class="projectDetails">
+									<li>HTML</li>
+									<li>Bootstrap</li>
+									<li>CSS</li>
+									<li>Javascript</li>
+									<li>Node.js</li>
+									<li>Sequelize</li>
+									<li>Git/Github</li>
+									<li>MySQL</li>
+								</ul> 
+							
+							<h3 class="dividerHead">Collaborators</h3>
+								<ul class="projectDetails">
+									<li><a class="collabLink" href="" target="blank">Jesus Coloyan</a></li>
+									<li>Andrew Castellano</li>
+								</ul>
+
+								<a class="repoLink" target="blank" href="https://github.com/castellano42/YeasieBois"><h3 class="dividerHead">Repository</h3></a>
+							
+						</div>
 				</li>
 
 <!-- 				<li id="portList3" class="portfolioListItem">

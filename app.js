@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+// $(window).onscroll($("#pageTitleDiv").addClass("hideTitle"));
+
 var leadPhoto = $(".leadPhoto");
 var infoCard = $(".infoCard");
 var websiteThumb = $(".websiteThumb");
