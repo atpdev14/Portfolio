@@ -67,6 +67,10 @@ body {
 	font-size: 21px;
 }
 
+.projectDescription {
+	margin-top: 20px;
+}
+
 .collabLink {
 	color: white;
 }
